@@ -88,7 +88,7 @@
                           <%=review.comment%>
                         </p>
                       </div>
-                      <%if(currUser && listing.owner._id.equals(currUser._id)){%>
+                      <%if(currUser && review.owner._id.equals(currUser._id)){%>
                         <form method="post" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=Delete"
                           class="mb-3">
                           <button class="btn btn-sm btn-dark">Delete</button>
